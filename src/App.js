@@ -10,9 +10,11 @@ import React, { Component } from 'react';
  this.setState(prevState => ({
  count: prevState.count + amount,
  }));
+
  increment = this.makeIncrementer(1);
  render() {
  return (
+ <div>
  <p>Count: {this.state.count}</p>
  <button className="increment" onClick={this.increment}>Increment
 count</button>
@@ -21,5 +23,3 @@ count</button>
  }
  }
  export default App;
-
- <div>
